@@ -26,7 +26,7 @@ const corsOptions = {
 
 const expressListEndpoints = require('express-list-endpoints');
 
-const config = require('sequelize-config-cli').development;
+const config = require('../../../sequelize-config-cli.js').production;
 
 const sequelize = new Sequelize(config.url, {
   dialect: config.dialect,
