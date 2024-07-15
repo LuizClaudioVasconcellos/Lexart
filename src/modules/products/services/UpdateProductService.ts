@@ -1,5 +1,7 @@
-import { Product } from '@modules/products/models/productModel';
-import AppError from '@shared/errors/AppError';
+// import { Product } from '@modules/products/models/productModel';
+// import AppError from '@shared/errors/AppError';
+import { Product } from '../../../modules/products/models/productModel';
+import AppError from '../../../shared/errors/AppError';
 
 interface ProductUpdateAttributes extends Partial<Product> {
   id: number;

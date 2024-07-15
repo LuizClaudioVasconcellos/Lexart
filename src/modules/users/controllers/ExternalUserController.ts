@@ -1,9 +1,11 @@
 import { Request, Response } from 'express';
 import { CreateExternalUserService } from '../services/CreateExternalUserService';
-import authConfig from '@config/auth';
+// import authConfig from '@config/auth';
+import authConfig from '../../../config/auth';
 import jwt, { Secret } from 'jsonwebtoken';
 
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 
 export class ExternalUserController {
   async create(request: Request, response: Response): Promise<Response> {

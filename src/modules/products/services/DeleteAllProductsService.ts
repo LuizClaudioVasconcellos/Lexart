@@ -1,7 +1,11 @@
-import { Product } from '@modules/products/models/productModel';
-import AppError from '@shared/errors/AppError';
-import { ProductDeletionLogService } from '@modules/products/services/ProductDeletionLogService';
-import redis from '@config/redisClient';
+// import { Product } from '@modules/products/models/productModel';
+import { Product } from '../../../modules/products/models/productModel';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
+// import { ProductDeletionLogService } from '@modules/products/services/ProductDeletionLogService';
+import { ProductDeletionLogService } from '../../../modules/products/services/ProductDeletionLogService';
+// import redis from '@config/redisClient';
+import redis from '../../../config/redisClient';
 
 export class DeleteAllProductsService {
   async execute(): Promise<void> {

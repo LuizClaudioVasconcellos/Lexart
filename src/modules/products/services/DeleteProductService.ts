@@ -1,5 +1,7 @@
-import { Product } from '@modules/products/models/productModel';
-import AppError from '@shared/errors/AppError';
+// import { Product } from '@modules/products/models/productModel';
+import { Product } from '../../../modules/products/models/productModel';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 
 export class DeleteProductService {
   async execute(id: number): Promise<void> {

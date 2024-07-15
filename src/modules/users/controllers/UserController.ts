@@ -4,7 +4,8 @@ import { DeleteUserService } from '../services/DeleteUserService';
 import { ShowUserService } from '../services/ShowUserService';
 import { ListUsersService } from '../services/ListUserService';
 
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 
 export class UserController {
   async findAll(request: Request, response: Response): Promise<Response> {

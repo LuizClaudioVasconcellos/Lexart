@@ -1,5 +1,7 @@
-import { ProductDeletionLog } from '@modules/products/models/productDeletionLogModel';
-import { Product } from '@modules/products/models/productModel';
+// import { ProductDeletionLog } from '@modules/products/models/productDeletionLogModel';
+import { ProductDeletionLog } from '../../../modules/products/models/productDeletionLogModel';
+// import { Product } from '@modules/products/models/productModel';
+import { Product } from '../../../modules/products/models/productModel';
 
 class ProductDeletionLogService {
   static async createLog(productId: number): Promise<void> {

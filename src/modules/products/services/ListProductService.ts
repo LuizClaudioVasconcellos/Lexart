@@ -1,4 +1,5 @@
-import { Product } from '@modules/products/models/productModel';
+// import { Product } from '@modules/products/models/productModel';
+import { Product } from '../../../modules/products/models/productModel';
 
 export class ListProductsService {
   async execute(): Promise<Product[]> {

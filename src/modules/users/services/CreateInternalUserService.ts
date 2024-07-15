@@ -1,5 +1,7 @@
-import { User, UserRole } from '@modules/users/models/userModel';
-import AppError from '@shared/errors/AppError';
+import { User, UserRole } from '../../../modules/users/models/userModel';
+import AppError from '../../../shared/errors/AppError';
+// import { User, UserRole } from '@modules/users/models/userModel';
+// import AppError from '@shared/errors/AppError';
 import bcrypt from 'bcryptjs';
 
 interface UserCreationAttributes {

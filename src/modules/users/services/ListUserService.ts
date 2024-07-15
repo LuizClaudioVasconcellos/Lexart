@@ -1,4 +1,5 @@
-import { User } from '@modules/users/models/userModel';
+// import { User } from '@modules/users/models/userModel';
+import { User } from '../../../modules/users/models/userModel';
 
 export class ListUsersService {
   async execute(): Promise<User[]> {

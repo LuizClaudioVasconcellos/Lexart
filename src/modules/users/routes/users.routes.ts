@@ -1,9 +1,13 @@
 import { Router } from 'express';
-import { InternalUserController } from '@modules/users/controllers/InternalUserController';
-import { ExternalUserController } from '@modules/users/controllers/ExternalUserController';
-import { UserController } from '@modules/users/controllers/UserController';
+import { InternalUserController } from '../../../modules/users/controllers/InternalUserController';
+import { ExternalUserController } from '../../../modules/users/controllers/ExternalUserController';
+import { UserController } from '../../../modules/users/controllers/UserController';
+// import { InternalUserController } from '@modules/users/controllers/InternalUserController';
+// import { ExternalUserController } from '@modules/users/controllers/ExternalUserController';
+// import { UserController } from '@modules/users/controllers/UserController';
 import { SessionsController } from '../controllers/SessionsController';
-import { isAuthenticated } from '@shared/http/middlewares/isAuthenticated';
+import { isAuthenticated } from '../../../shared/http/middlewares/isAuthenticated';
+// import { isAuthenticated } from '@shared/http/middlewares/isAuthenticated';
 
 const usersRouter = Router();
 const internalUserController = new InternalUserController();

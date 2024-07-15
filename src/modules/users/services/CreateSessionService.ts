@@ -1,8 +1,11 @@
-import { User } from '@modules/users/models/userModel';
-import AppError from '@shared/errors/AppError';
+import { User } from '../../../modules/users/models/userModel';
+import AppError from '../../../shared/errors/AppError';
+// import { User } from '@modules/users/models/userModel';
+// import AppError from '@shared/errors/AppError';
 import bcrypt from 'bcryptjs';
 import jwt, { Secret } from 'jsonwebtoken';
-import authConfig from '@config/auth';
+// import authConfig from '@config/auth';
+import authConfig from '../../../config/auth';
 
 interface IRequest {
   email: string;

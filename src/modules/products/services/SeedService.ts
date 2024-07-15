@@ -1,8 +1,13 @@
-import sequelize from '@shared/http/server';
+// import sequelize from '@shared/http/server';
+import sequelize from '../../../shared/http/server';
+// import {
+//   seedProducts,
+//   undoSeedProducts,
+// } from '@shared/sequelize/seeds/20240710184730-demo-products';
 import {
   seedProducts,
   undoSeedProducts,
-} from '@shared/sequelize/seeds/20240710184730-demo-products';
+} from '../../../shared/sequelize/seeds/20240710184730-demo-products';
 
 export class SeedService {
   async execute(): Promise<void> {

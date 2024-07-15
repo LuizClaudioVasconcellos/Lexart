@@ -1,7 +1,9 @@
 import { Router } from 'express';
 import { ProductsController } from '../controllers/ProductsController';
-import { isAuthenticated } from '@shared/http/middlewares/isAuthenticated';
-import { ensureExternalUser } from '@shared/http/middlewares/ensureExternalUser';
+// import { isAuthenticated } from '@shared/http/middlewares/isAuthenticated';
+import { isAuthenticated } from '../../../shared/http/middlewares/isAuthenticated';
+// import { ensureExternalUser } from '@shared/http/middlewares/ensureExternalUser';
+import { ensureExternalUser } from '../../../shared/http/middlewares/ensureExternalUser';
 
 const productsRouter = Router();
 const productsController = new ProductsController();

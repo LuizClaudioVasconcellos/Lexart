@@ -1,8 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
-import authConfig from '@config/auth';
+import authConfig from '../../../config/auth';
+// import authConfig from '@config/auth';
 import jwt, { Secret } from 'jsonwebtoken';
-import AppError from '@shared/errors/AppError';
-import { UserRole } from '@modules/users/models/userModel';
+import AppError from '../../../shared/errors/AppError';
+import { UserRole } from '../../../modules/users/models/userModel';
+// import AppError from '@shared/errors/AppError';
+// import { UserRole } from '@modules/users/models/userModel';
 
 interface TokenPayload {
   id: number;

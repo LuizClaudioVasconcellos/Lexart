@@ -5,9 +5,11 @@ import { DeleteProductService } from '../services/DeleteProductService';
 import { ShowProductService } from '../services/ShowProductService';
 import { ListProductsService } from '../services/ListProductService';
 import { DeleteAllProductsService } from '../services/DeleteAllProductsService';
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 import { ListProductLogsService } from '../services/ListProductLogsService';
-import { sendMessageToWebSocketClients } from '@config/webSocket';
+// import { sendMessageToWebSocketClients } from '@config/webSocket';
+import { sendMessageToWebSocketClients } from '../../../config/webSocket';
 import { SeedService } from '../services/SeedService';
 
 export class ProductsController {

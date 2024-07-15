@@ -1,5 +1,7 @@
-import { User } from '@modules/users/models/userModel';
-import AppError from '@shared/errors/AppError';
+import { User } from '../../../modules/users/models/userModel';
+import AppError from '../../../shared/errors/AppError';
+// import { User } from '@modules/users/models/userModel';
+// import AppError from '@shared/errors/AppError';
 
 interface UserUpdateAttributes extends Partial<User> {
   id: number;

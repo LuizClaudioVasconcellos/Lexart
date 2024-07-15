@@ -1,9 +1,11 @@
 import { Request, Response } from 'express';
 import { CreateInternalUserService } from '../services/CreateInternalUserService';
-import authConfig from '@config/auth';
+// import authConfig from '@config/auth';
+import authConfig from '../../../config/auth';
 import jwt, { Secret } from 'jsonwebtoken';
 
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 
 export class InternalUserController {
   async create(request: Request, response: Response): Promise<Response> {

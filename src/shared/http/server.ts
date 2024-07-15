@@ -4,12 +4,17 @@ import 'express-async-errors';
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import routes from './routes';
-import AppError from '@shared/errors/AppError';
+// import AppError from '@shared/errors/AppError';
+import AppError from '../../shared/errors/AppError';
 import { Sequelize } from 'sequelize';
-import { initProductModel } from '@modules/products/models/productModel';
-import { initProductDeletionLogModel } from '@modules/products/models/productDeletionLogModel';
-import { initUserModel } from '@modules/users/models/userModel';
-import { setupSwagger } from '@config/swagger';
+import { initProductModel } from '../../modules/products/models/productModel';
+import { initProductDeletionLogModel } from '../../modules/products/models/productDeletionLogModel';
+import { initUserModel } from '../../modules/users/models/userModel';
+import { setupSwagger } from '../../config/swagger';
+// import { initProductModel } from '@modules/products/models/productModel';
+// import { initProductDeletionLogModel } from '@modules/products/models/productDeletionLogModel';
+// import { initUserModel } from '@modules/users/models/userModel';
+// import { setupSwagger } from '@config/swagger';
 
 const corsOptions = {
   origin: true, // Permitir todas as origens
